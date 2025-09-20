@@ -1,0 +1,65 @@
+
+.appointment-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #96e7dc;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.appointment-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.appointment-container select,
+.appointment-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.appointment-container select:disabled {
+  background-color: #d9f4ed;
+}
+
+.appointment-container button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #4f46e5;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.appointment-container button:disabled {
+  background-color: #a3f0f1;
+  cursor: not-allowed;
+}
+
+.appointment-container button:hover:not(:disabled) {
+  background-color: #3730a3;
+}
+
+.appointment-container p {
+  margin-top: 10px;
+  color: #f87171;
+  font-weight: 500;
+}

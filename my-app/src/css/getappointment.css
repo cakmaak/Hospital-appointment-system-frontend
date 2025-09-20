@@ -1,0 +1,70 @@
+.randevularim-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937; /* koyu gri */
+}
+
+.user-card {
+  background-color: #ffffff;
+  color: #111827;
+  padding: 100px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+}
+
+.user-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.user-card p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.appointments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.appointment-card {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.appointment-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.appointment-card p strong {
+  color: #111827;
+}
+
+@media (max-width: 640px) {
+  .user-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .appointment-card {
+    padding: 15px;
+  }
+}

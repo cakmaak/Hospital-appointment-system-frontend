@@ -1,0 +1,89 @@
+.saveadmin-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.saveadmin-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.saveadmin-title {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.error-msg {
+  color: #dc2626;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.success-msg {
+  color: #16a34a;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.saveadmin-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.saveadmin-btn:hover {
+  background-color: #4338ca;
+}
+
+
+@media (max-width: 500px) {
+  .saveadmin-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  .saveadmin-title {
+    font-size: 1.5rem;
+  }
+}

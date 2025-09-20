@@ -1,0 +1,97 @@
+
+.admin-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9fafb; /* açık gri arka plan */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-container h2 {
+  text-align: center;
+  color: #111827;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.admin-table tr:hover {
+  background-color: #e0e7ff;
+}
+
+.status-onaylandi {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.status-reddedildi {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.status-beklemede {
+  color: #ca8a04;
+  font-weight: 500;
+}
+
+.action-buttons button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.action-buttons button:hover {
+  opacity: 0.85;
+}
+
+.button-accept {
+  background-color: #16a34a;
+  color: white;
+}
+
+.button-reject {
+  background-color: #dc2626;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 10px;
+  }
+
+  .admin-table th, .admin-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .action-buttons button {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}
