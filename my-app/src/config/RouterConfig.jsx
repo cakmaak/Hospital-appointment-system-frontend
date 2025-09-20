@@ -8,9 +8,9 @@ import Appointment from '../components/Appointment'
 import GetAppointment from '../components/GetAppointment'
 import AdminPanel from '../components/AdminPanel'
 import EditDoctor from '../components/EditDoctor'
-import EditPoliklinik from '../components/Editpoliklinik'
 import Signup from '../components/Signup'
 import SaveAdmin from '../components/SaveAdmin'
+import EditPoliklinik from '../components/Editpoliklinik'
 
 function RouterConfig() {
   return (
