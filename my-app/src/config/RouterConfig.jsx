@@ -10,7 +10,7 @@ import AdminPanel from '../components/AdminPanel'
 import EditDoctor from '../components/EditDoctor'
 import Signup from '../components/Signup'
 import SaveAdmin from '../components/SaveAdmin'
-import EditPoliklinik from '../components/Editpoliklinik'
+import Editpoliklinik from '../components/Editpoliklinik'
 
 function RouterConfig() {
   return (
@@ -24,7 +24,7 @@ function RouterConfig() {
             <Route path='/getappointments' element={<GetAppointment></GetAppointment>} ></Route>
             <Route path='/adminpanel' element={<AdminPanel></AdminPanel>} ></Route>
             <Route path='/editdoctormenu' element={<EditDoctor></EditDoctor>} ></Route>
-            <Route path='/editpoliklinik' element={<EditPoliklinik></EditPoliklinik>} ></Route>
+            <Route path='/editpoliklinik' element={<Editpoliklinik></Editpoliklinik>} ></Route>
             <Route path='/signup' element={<Signup></Signup>} ></Route>
             <Route path='/saveadmin' element={<SaveAdmin></SaveAdmin>}></Route>
 
