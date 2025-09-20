@@ -63,6 +63,10 @@ function Login() {
             Kayıt Ol
           </Link>
         </p>
+
+        <p className="demo-info">
+    Demo Admin Girişi: <strong>Email:</strong> admin@admin.com | <strong>Şifre:</strong> 123456
+  </p>
       </div>
     </div>
   );

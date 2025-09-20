@@ -7,6 +7,16 @@
   padding: 1rem;
   box-sizing: border-box;
 }
+.demo-info {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f3f4f6; /* açık gri */
+  border-left: 4px solid #4f46e5; /* mor vurgu */
+  color: #111827;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
 
 .login-card {
   width: 100%;
