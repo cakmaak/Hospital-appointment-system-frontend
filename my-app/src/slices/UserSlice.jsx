@@ -27,7 +27,7 @@ export const getuser=createAsyncThunk(
     "getuser",
     async (thunkApi) => {
         try {
-            const response=await axios.get("https://hospitalappointmentsystem-backend.sliplane.app/appointment/user/getuser",
+            const response=await axios.get("https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/user/getuser",
                 {
                     headers:{
                         Authorization: `Bearer ${sessionStorage.getItem("token")}`
@@ -50,7 +50,7 @@ export const getappointmentuser=createAsyncThunk(
     "getappointmentuser",
     async (thunkApi) => {
         try {
-            const response=await axios.get("https://hospitalappointmentsystem-backend.sliplane.app/appointment/gettallappointmentuser",
+            const response=await axios.get("https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/gettallappointmentuser",
                 {
                     headers:{
                         Authorization: `Bearer ${sessionStorage.getItem("token")}`
@@ -74,7 +74,7 @@ export const cancelappointment = createAsyncThunk(
   async ({ id }, thunkApi) => {   
     try {
       const response = await axios.put(
-        `https://hospitalappointmentsystem-backend.sliplane.app/appointment/cancelappointment/${id}`,
+        `https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/cancelappointment/${id}`,
         { id },
         {
           headers: {
@@ -97,7 +97,7 @@ export const login=createAsyncThunk(
     "login",
     async ({email,password},thunkAPI) => {
         try {
-            const response=await axios.post("https://hospitalappointmentsystem-backend.sliplane.app/appointment/login",
+            const response=await axios.post("https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/login",
                 {
                     email,
                     password

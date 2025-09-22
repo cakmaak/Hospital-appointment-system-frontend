@@ -13,7 +13,7 @@ export const getallpoliklinik = createAsyncThunk(
   async (_, thunkApi) => {
     try {
       const response = await axios.get(
-        "https://hospitalappointmentsystem-backend.sliplane.app/appointment/poliklinik/getallklinik"
+        "https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/poliklinik/getallklinik"
       )
       return response.data
     } catch (error) {

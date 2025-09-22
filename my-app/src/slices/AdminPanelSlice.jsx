@@ -12,7 +12,7 @@ export const addpoliklinik=createAsyncThunk(
     "addpoliklinik",
     async ({name},thunkApi) => {
         try {
-            const response=await axios.post("https://hospitalappointmentsystem-backend.sliplane.app/appointment/poliklinik/savepoliklinik",
+            const response=await axios.post("https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/poliklinik/savepoliklinik",
                 {name},
                 {
                      headers: {
@@ -36,7 +36,7 @@ export const deletepoliklinik=createAsyncThunk(
     "deletepoliklinik",
     async ({id},thunkApi) => {
         try {
-            const response=await axios.delete(`https://hospitalappointmentsystem-backend.sliplane.app/appointment/poliklinik/deletepoliklinik/${id}`,
+            const response=await axios.delete(`https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/poliklinik/deletepoliklinik/${id}`,
                 
                 {
                      headers: {
@@ -61,7 +61,7 @@ export const deletedoctor = createAsyncThunk(
   async ({ id }, thunkApi) => {
     try {
       const response = await axios.delete(
-        `https://hospitalappointmentsystem-backend.sliplane.app/appointment/doctor/deletedoctor/${id}`,
+        `https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/doctor/deletedoctor/${id}`,
         {
           headers: {
             Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -79,7 +79,7 @@ export const adddoctor=createAsyncThunk(
     "adddoctor",
     async ({name,poliklinikid},thunkApi) => {
         try {
-            const response=await axios.post(`https://hospitalappointmentsystem-backend.sliplane.app/appointment/doctor/savedoctor/${poliklinikid}`,
+            const response=await axios.post(`https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/doctor/savedoctor/${poliklinikid}`,
                 {name},
                 {
                      headers: {
@@ -106,7 +106,7 @@ export const acceptappointment=createAsyncThunk(
     "acceptappointment",
     async ({id},thunkApi) => {
         try {
-            const response =await axios.put(`https://hospitalappointmentsystem-backend.sliplane.app/appointment/acceptappointment/${id}`,
+            const response =await axios.put(`https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/acceptappointment/${id}`,
                 {id},
                 {
                     headers: {
@@ -132,7 +132,7 @@ export const rejectedappointment=createAsyncThunk(
     async ({id},thunkApi) => {
         try {
             const response = await axios.put(
-                `https://hospitalappointmentsystem-backend.sliplane.app/appointment/rejectedappointment/${id}`,
+                `https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/rejectedappointment/${id}`,
                 {id},
                 {
                   headers: {
@@ -154,7 +154,7 @@ export const getappointment=createAsyncThunk(
     "getappointment",
     async (thunkApi) => {
         try {
-            const response=await axios.get("https://hospitalappointmentsystem-backend.sliplane.app/appointment/getallappointment",
+            const response=await axios.get("https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/getallappointment",
                 {
                     headers:{
                         Authorization: `Bearer ${sessionStorage.getItem("token")}`
@@ -177,7 +177,7 @@ export const signup= createAsyncThunk(
     "signup",
     async ({email,password,name},thunkApi) => {
         try {
-            const response=await axios.post("https://hospitalappointmentsystem-backend.sliplane.app/appointment/user/saveuser",
+            const response=await axios.post("https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/user/saveuser",
                 {
                     email,
                     password,
@@ -211,7 +211,7 @@ export const saveadmin= createAsyncThunk(
     "saveadmin",
     async ({email,password,name},thunkApi) => {
         try {
-            const response=await axios.post("https://hospitalappointmentsystem-backend.sliplane.app/appointment/user/saveadmin",
+            const response=await axios.post("https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/user/saveadmin",
                 {
                     email,
                     password,

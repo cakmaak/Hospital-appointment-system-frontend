@@ -13,7 +13,7 @@ export const getalldoctors = createAsyncThunk(
   async (_, thunkApi) => {
     try {
       const response = await axios.get(
-        "https://hospitalappointmentsystem-backend.sliplane.app/appointment/doctor/getalldoctors"
+        "https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/doctor/getalldoctors"
       )
       return response.data
     } catch (error) {

@@ -12,7 +12,7 @@ export const saveAppointment = createAsyncThunk(
   async ({ tarih, poliklinikid, doctorid }, thunkAPI) => {
     try {
       const response = await axios.post(
-        `https://hospitalappointmentsystem-backend.sliplane.app/appointment/saveappointment/${poliklinikid}/${doctorid}`,
+        `https://hospitalappointmentsystem-backend-production.up.railway.app/appointment/saveappointment/${poliklinikid}/${doctorid}`,
         { tarih },
         {
           headers: {
